@@ -1,5 +1,5 @@
 // build.js
-const { build, buildSync, serve } = require("esbuild");
+import { build, buildSync, serve } from 'esbuild';
 
 function runBuild() {
   serve(

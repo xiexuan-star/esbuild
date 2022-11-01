@@ -2,10 +2,22 @@
   "name": "esbuild",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": "git@github.com:xiexuan-star/esbuild.git",
   "author": "xiexuan-star <xiexuan127@foxmail.com>",
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.15.12"
+  },
+  "dependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/generator": "^7.20.0",
+    "@babel/parser": "^7.20.0",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/runtime-corejs3": "^7.20.0",
+    "@babel/traverse": "^7.20.0",
+    "@babel/types": "^7.20.0",
+    "rollup": "^3.2.3"
   }
 }

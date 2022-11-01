@@ -1,9 +1,13 @@
-const { build, buildSync, serve } = require("esbuild");
+import { build } from 'esbuild';
+import { envPlugin } from './plugins/envPlugin.js';
+
+runBuild()
 
 async function runBuild() {
   // 异步方法，返回一个 Promise
   const result = await build({
     // ----  如下是一些常见的配置  ---
+    plugins:[envPlugin],
     // 当前项目根目录
     absWorkingDir: process.cwd(),
     // 入口文件列表，为一个数组
